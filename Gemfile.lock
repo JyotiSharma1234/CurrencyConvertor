@@ -1,3 +1,12 @@
+GIT
+  remote: git@github.com:ninadnehete/eu_central_bank.git
+  revision: f5a0896434b49e78988648a08cb0191d2b6c8381
+  branch: fixed_url
+  specs:
+    eu_central_bank (1.1.3)
+      money (~> 6.9.0)
+      nokogiri (>= 1.6.3, < 2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -53,8 +62,7 @@ GEM
     ffi (1.9.25)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
-    i18n (1.1.0)
-      concurrent-ruby (~> 1.0)
+    i18n (0.8.6)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -71,6 +79,8 @@ GEM
     mini_mime (1.0.1)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
+    money (6.9.0)
+      i18n (>= 0.6.4, < 0.9)
     msgpack (1.2.4)
     nio4r (2.3.1)
     nokogiri (1.8.4)
@@ -107,6 +117,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
+    redis (4.0.2)
     ruby_dep (1.5.0)
     spring (2.0.2)
       activesupport (>= 4.2)
@@ -134,9 +145,11 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
+  eu_central_bank!
   listen (>= 3.0.5, < 3.2)
   puma (~> 3.11)
   rails (~> 5.2.0)
+  redis
   spring
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
