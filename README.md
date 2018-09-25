@@ -1,4 +1,5 @@
 # README
+- Exchange rates are cached in exchange_rates.xml file and rates are uploaded once a day.
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
